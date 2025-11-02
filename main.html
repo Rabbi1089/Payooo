@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class=" bg-slate-800">
+
+    <section class=" max-w-md min-h-screen bg-gray-200 mx-auto py-6 ">
+        <header>
+            <nav class=" flex justify-between px-3 mb-1 ">
+                <div class=" flex mx-6 space-x-2 px-3">
+                    <img src="/assets/Group.png" alt="" srcset="">
+                    <div class="">
+                        <h1 class=" text-2xl">$4500</h1>
+                        <p>Available balance</p>
+                    </div>
+                </div>
+                <button class="btn" type="submit">Logout</button>
+
+            </nav>
+            <section class=" m-6">
+                <h1 class=" text-2xl font-bold">Welcome to Payooo</h1>
+                <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+                <div class="cards grid grid-cols-3  gap-3 mt-10">
+                    <!-- item - 1 -->
+                    <div class="box cursor-pointer rounded-sm border p-4 text-center">
+                        <img class="w-8 mx-auto" src="/assets/purse1.png" alt="" srcset="">
+                        <h3>Add Money</h3>
+                    </div>
+                    <!-- item - 2 -->
+                    <div class="box border p-4 text-center cursor-pointer rounded-sm ">
+                        <img class="w-8 mx-auto" src="/assets/money1.png" alt="" srcset="">
+                        <h3>Cash out</h3>
+                    </div>
+
+                    <!-- item - 3 -->
+
+                    <div class="box border p-4 text-center cursor-pointer rounded-sm ">
+                        <img class="w-8 mx-auto" src="/assets/transaction1.png" alt="" srcset="">
+                        <h3>Transfer Money</h3>
+                    </div>
+
+                    <!-- item - 4-->
+
+                    <div class="box border p-4 text-center cursor-pointer rounded-sm ">
+                        <img class="w-8 mx-auto" src="/assets/wallet1.png" alt="" srcset="">
+                        <h3>Get Bonus</h3>
+                    </div>
+
+                    <!-- item - 5-->
+
+                    <div class="box border p-4 text-center cursor-pointer rounded-sm ">
+                        <img class="w-8 mx-auto" src="/assets/wallet1.png" alt="" srcset="">
+                        <h3>Pay Bill</h3>
+                    </div>
+
+                    <!-- item - 6-->
+
+                    <div class="box border p-4 text-center cursor-pointer rounded-sm ">
+                        <img class="w-8 mx-auto" src="/assets/transaction1.png" alt="" srcset="">
+                        <h3>transaction</h3>
+                    </div>
+                </div>
+
+
+            </section>
+        </header>
+<section>
+ <p class=" text-xl p-4">Add Money</p>
+ <div class="hero bg-base-200">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+           
+  <legend class="fieldset-legend">Select Your Bank</legend>
+  <select class="select">
+    <option disabled selected>Select Bank</option>
+    <option value="nagad">Nagad</option>
+    <option value="bkash">Bkash</option>
+    <option value="Dbbl">Dbbl</option>
+  </select>
+  <span class="label">Optional</span>
+
+          <label class="label">Bank Account Number</label>
+          <input type="text" class="input" placeholder="Bank Account Number 11 Digit" />
+          <label class="label">Amount to Add</label>
+          <input type="number" class="input" placeholder="Amount to Add" />
+          <label class="label">Pin Number</label>
+          <input type="number" class="input" placeholder="Pin Number" />
+          <button class="btn btn-neutral bg-blue-600 border border-r-4 border-blue-600 mt-4">Add Money</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+    </section>
+
+</body>
+
+</html>
