@@ -17,7 +17,10 @@
                 <div class=" flex mx-6 space-x-2 px-3">
                     <img src="/assets/Group.png" alt="" srcset="">
                     <div class="">
-                        <h1 class=" text-2xl">$4500</h1>
+                        <h1 class=" text-2xl">$
+                            <span id="total-amount-text">4500</span>
+
+                        </h1>
                         <p>Available balance</p>
                     </div>
                 </div>
@@ -30,12 +33,13 @@
 
                 <div class="cards grid grid-cols-3  gap-3 mt-10">
                     <!-- item - 1 -->
-                    <div class="box cursor-pointer rounded-sm border p-4 text-center">
+                    <div id="add-money-box" class="box cursor-pointer rounded-sm border p-4 text-center">
                         <img class="w-8 mx-auto" src="/assets/purse1.png" alt="" srcset="">
                         <h3>Add Money</h3>
                     </div>
                     <!-- item - 2 -->
-                    <div class="box border p-4 text-center cursor-pointer rounded-sm ">
+
+                    <div id="cash-out-box" class="box border p-4 text-center cursor-pointer rounded-sm ">
                         <img class="w-8 mx-auto" src="/assets/money1.png" alt="" srcset="">
                         <h3>Cash out</h3>
                     </div>
@@ -72,40 +76,63 @@
 
             </section>
         </header>
-<section>
- <p class=" text-xl p-4">Add Money</p>
- <div class="hero bg-base-200">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-      <div class="card-body">
-        <fieldset class="fieldset">
-           
-  <legend class="fieldset-legend">Select Your Bank</legend>
-  <select class="select">
-    <option disabled selected>Select Bank</option>
-    <option value="nagad">Nagad</option>
-    <option value="bkash">Bkash</option>
-    <option value="Dbbl">Dbbl</option>
-  </select>
-  <span class="label">Optional</span>
+        <section id="add-money-section">
+            <p class=" text-xl p-4">Add Money</p>
+            <div class="hero bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
 
-          <label class="label">Bank Account Number</label>
-          <input type="text" class="input" placeholder="Bank Account Number 11 Digit" />
-          <label class="label">Amount to Add</label>
-          <input type="number" class="input" placeholder="Amount to Add" />
-          <label class="label">Pin Number</label>
-          <input type="number" class="input" placeholder="Pin Number" />
-          <button class="btn btn-neutral bg-blue-600 border border-r-4 border-blue-600 mt-4">Add Money</button>
-        </fieldset>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
+                                <legend class="fieldset-legend">Select Your Bank</legend>
+                                <select id="bank-name" class="select">
+                                    <option disabled selected>Select Bank</option>
+                                    <option value="nagad">Nagad</option>
+                                    <option value="bkash">Bkash</option>
+                                    <option value="Dbbl">Dbbl</option>
+                                </select>
+                                <span class="label">Optional</span>
+
+                                <label class="label">Bank Account Number</label>
+                                <input id="account-number" type="text" class="input"
+                                    placeholder="Bank Account Number 11 Digit" />
+                                <label class="label">Amount to Add</label>
+                                <input id="amount" type="number" class="input" placeholder="Amount to Add" />
+                                <label class="label">Pin Number</label>
+                                <input id="pin-number" type="number" class="input" placeholder="Pin Number" />
+                                <button id="btn-add-money"
+                                    class="btn btn-neutral bg-blue-600 border border-r-4 border-blue-600 mt-4">Add
+                                    Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- cash out -->
+        <section id="cash-out-section">
+            <h3 class="uppercase text-center text-blue-600 font-bold p-4 m-4 text-2xl">Cashout</h3>
+            <div class="hero bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class=" card-body">
+                            <label class="label">Agent Number</label>
+                            <input id="agent-number" type="text" class="input" placeholder="Agent Number 11 Digit" />
+                            <label class="label">Amount to Cahoot</label>
+                            <input id="agent-amount" type="number" class="input" placeholder="Amount to Cashout" />
+                            <label class="label">Pin Number</label>
+                            <input id="agent-pin-number" type="number" class="input" placeholder="Pin Number" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
 </body>
+<script src="/script/addMoney.js"></script>
+<script src="/script/toggle.js"></script>
 
 </html>
