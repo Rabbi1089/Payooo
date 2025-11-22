@@ -9,16 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class=" bg-slate-800">
+<body class=" bg-slate-800 border m-0 overflow-hidden">
 
-    <section class=" max-w-md min-h-screen bg-gray-200 mx-auto py-6 ">
+    <section class=" max-w-md h-screen bg-gray-200 mx-auto">
         <header>
-            <nav class=" flex justify-between px-3 mb-1 ">
+            <nav class=" flex justify-between px-3">
                 <div class=" flex mx-6 space-x-2 px-3">
                     <img src="/assets/Group.png" alt="" srcset="">
                     <div class="">
                         <h1 class=" text-2xl">$
-                            <span id="total-amount-text">4500</span>
+                            <span id="main-balance">4500</span>
 
                         </h1>
                         <p>Available balance</p>
@@ -27,11 +27,11 @@
                 <button class="btn" type="submit">Logout</button>
 
             </nav>
-            <section class=" m-6">
+            <section class=" mx-2">
                 <h1 class=" text-2xl font-bold">Welcome to Payooo</h1>
                 <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
-                <div class="cards grid grid-cols-3  gap-3 mt-10">
+                <div class="cards grid grid-cols-3  gap-3 mt-2">
                     <!-- item - 1 -->
                     <div id="add-money-box" class="box cursor-pointer rounded-sm border p-4 text-center">
                         <img class="w-8 mx-auto" src="/assets/purse1.png" alt="" srcset="">
@@ -77,7 +77,7 @@
             </section>
         </header>
         <section id="add-money-section">
-            <p class=" text-xl p-4">Add Money</p>
+            <p class=" text-xl px-2">Add Money</p>
             <div class="hero bg-base-200">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -101,7 +101,7 @@
                                 <label class="label">Pin Number</label>
                                 <input id="pin-number" type="number" class="input" placeholder="Pin Number" />
                                 <button id="btn-add-money"
-                                    class="btn btn-neutral bg-blue-600 border border-r-4 border-blue-600 mt-4">Add
+                                    class="btn btn-neutral bg-blue-600 border border-r-4 border-blue-600 mt-2">Add
                                     Money</button>
                             </fieldset>
                         </div>
@@ -113,17 +113,20 @@
 
         <!-- cash out -->
         <section id="cash-out-section">
-            <h3 class="uppercase text-center text-blue-600 font-bold p-4 m-4 text-2xl">Cashout</h3>
+            <h3 class="uppercase text-center text-blue-600 font-bold p-2 m-2 text-2xl">Cashout</h3>
             <div class="hero bg-base-200">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class=" card-body">
                             <label class="label">Agent Number</label>
                             <input id="agent-number" type="text" class="input" placeholder="Agent Number 11 Digit" />
-                            <label class="label">Amount to Cahoot</label>
-                            <input id="agent-amount" type="number" class="input" placeholder="Amount to Cashout" />
+                            <label class="label">Amount to Cashout</label>
+                            <input id="cashout-amount" type="number" class="input" placeholder="Amount to Cashout" />
                             <label class="label">Pin Number</label>
                             <input id="agent-pin-number" type="number" class="input" placeholder="Pin Number" />
+                            <button id="btn-cash-out"
+                                class="btn btn-neutral bg-blue-600 border border-r-4 border-blue-600 mt-4">Cash
+                                Out</button>
                         </div>
                     </div>
                 </div>
@@ -133,6 +136,8 @@
 
 </body>
 <script src="/script/addMoney.js"></script>
+<script src="/utilites/utilites.js"></script>
 <script src="/script/toggle.js"></script>
+<script src="/script/cashout.js"></script>
 
 </html>
